@@ -8,6 +8,6 @@
 
 Перед запуском сервера потрібно створити файл .env і прописати
 MONGO_URL=mongodb+srv://<<username>>:<<password>>@cluster0.ygcc5.mongodb.net/test?retryWrites=true&w=majority
-щоб підключитися до MongoDB
+щоб підключитися до MongoDB.
 
 Після запуску сервера переглядаємо [документацію по запитах](http://localhost:8080/api/docs).
