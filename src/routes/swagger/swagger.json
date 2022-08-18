@@ -5,11 +5,9 @@
     "version": "1.0.0",
     "title": "eWallet"
   },
-  "host": "localhost:8080",
+  "host": "wallet-api-back-end.herokuapp.com",
   "basePath": "/api",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["https"],
   "tags": [
     {
       "name": "users",
@@ -23,14 +21,10 @@
   "paths": {
     "/users": {
       "get": {
-        "tags": [
-          "users"
-        ],
+        "tags": ["users"],
         "summary": "Get list of users",
         "operationId": "getUserInfo",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "responses": {
           "200": {
             "description": "Operation successful user info",
@@ -47,15 +41,11 @@
         }
       },
       "post": {
-        "tags": [
-          "users"
-        ],
+        "tags": ["users"],
         "summary": "Registers new user.",
         "description": "This creates a new user.",
         "operationId": "createUser",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "body",
@@ -84,15 +74,11 @@
     },
     "/wallet": {
       "get": {
-        "tags": [
-          "wallet"
-        ],
+        "tags": ["wallet"],
         "summary": "Request user balans",
         "description": "This returns user balans.",
         "operationId": "getBalans",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "body",
@@ -127,15 +113,11 @@
     },
     "/wallet/transaction": {
       "get": {
-        "tags": [
-          "wallet"
-        ],
+        "tags": ["wallet"],
         "summary": "Request all users transactions statistics.",
         "description": "This returns all transactions statistics for a given user.",
         "operationId": "getTransactionsStats",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "body",
@@ -180,15 +162,11 @@
         }
       },
       "post": {
-        "tags": [
-          "wallet"
-        ],
+        "tags": ["wallet"],
         "summary": "Creates a transaction.",
         "description": "This creates a transaction.",
         "operationId": "createTransaction",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "body",
@@ -217,15 +195,11 @@
     },
     "/wallet/transfer": {
       "post": {
-        "tags": [
-          "wallet"
-        ],
+        "tags": ["wallet"],
         "summary": "Creates s transfer.",
         "description": "This returns transaction about transfer.",
         "operationId": "createTransferCategories",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [
           {
             "name": "body",
@@ -266,10 +240,7 @@
           "example": "Peremychniy"
         }
       },
-      "required": [
-        "firstName",
-        "lastName"
-      ]
+      "required": ["firstName", "lastName"]
     },
     "Balans": {
       "type": "object",
@@ -279,9 +250,7 @@
           "example": "62fdf7483dbc09f0ce097a2f"
         }
       },
-      "required": [
-        "userId"
-      ]
+      "required": ["userId"]
     },
     "transactionInfo": {
       "type": "object",
@@ -291,9 +260,7 @@
           "example": "62fdf7483dbc09f0ce097a2f"
         }
       },
-      "required": [
-        "owner"
-      ]
+      "required": ["owner"]
     },
     "registerSuccess": {
       "type": "object",
@@ -533,10 +500,7 @@
           "type": "string"
         }
       },
-      "required": [
-        "typeTransaction",
-        "sum"
-      ]
+      "required": ["typeTransaction", "sum"]
     },
     "Transfer": {
       "type": "object",
@@ -562,11 +526,7 @@
           "example": "Долг"
         }
       },
-      "required": [
-        "owner",
-        "recipient",
-        "sum"
-      ]
+      "required": ["owner", "recipient", "sum"]
     }
   }
 }
