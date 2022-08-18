@@ -10,4 +10,6 @@
 MONGO_URL=mongodb+srv://<<username>>:<<password>>@cluster0.ygcc5.mongodb.net/test?retryWrites=true&w=majority
 щоб підключитися до MongoDB.
 
-Після запуску сервера переглядаємо [документацію по запитах](https://wallet-api-back-end.herokuapp.com/api/docs/).
+Після запуску сервера переглядаємо документацію по запитах можна переглянути за адресою (https://localhost:8080/api/docs/).
+
+Або можна просто скористатися Back-End from heroku [документацію по запитах](https://wallet-api-back-end.herokuapp.com/api/docs/).
