@@ -1,0 +1,45 @@
+{
+  "name": "lessons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "start:dev": "npx nodemon server.js",
+    "lint": "npx eslint src",
+    "lint:fix": "npx eslint --fix **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerhiiOnyshchenko/node-lessons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerhiiOnyshchenko/node-lessons/issues"
+  },
+  "homepage": "https://github.com/SerhiiOnyshchenko/node-lessons#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.7",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "5.2.0",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.4"
+  }
+}
